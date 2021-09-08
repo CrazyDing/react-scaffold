@@ -1,0 +1,81 @@
+@import "~antd/lib/style/themes/default.less";
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background: #f0f2f5;
+    background-image: url(../../assets/imgs/login-bg.svg);
+    background-position: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 180px 0 144px;
+    .header {
+        text-align: center;
+        height: 48px;
+        line-height: 48px;
+        margin-bottom: 56px;
+        a {
+            color: #1890ff;
+            background-color: transparent;
+            text-decoration: none;
+            outline: none;
+            cursor: pointer;
+            transition: color .3s;
+        }
+        .logo {
+            height: 48px;
+            vertical-align: top;
+            margin-right: 8px;
+        }
+        .title {
+            position: relative;
+            top: 2px;
+            font-size: 36px;
+            color: @heading-color;
+            font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            font-weight: 600;
+        }
+    }
+    .login-form {
+        width: 368px;
+        margin: 0 auto;
+        .prefix-icon {
+            font-size: @font-size-base;
+            color: @disabled-color;
+        }
+        .additional {
+            text-align: left;
+            .submit {
+                width: 100%;
+                margin-top: 24px;
+            }
+            .modify {
+                float: right;
+            }
+            a {
+                color: #1890ff;
+                background-color: transparent;
+                text-decoration: none;
+                outline: none;
+                cursor: pointer;
+                transition: color .3s;
+            }
+            :global {
+                .ant-form-item-control {
+                    line-height: 22px;
+                }
+            }
+        }
+        :global {
+            .ant-form-item {
+                margin-bottom: 24px;
+            }
+            .ant-input-affix-wrapper .ant-input:not(:first-child) {
+                padding-left: 34px;
+            }
+            .has-error .ant-input:not([disabled]):hover {
+                border-color: #f5222d !important;
+            }
+        }
+    }
+}

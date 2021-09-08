@@ -1,0 +1,1 @@
+存放流程类的actionTypes的定义

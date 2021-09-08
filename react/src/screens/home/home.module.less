@@ -1,0 +1,91 @@
+@import "~antd/lib/style/themes/default.less";
+.mini-layout {
+  :global(.ant-tabs-bar) {
+    margin-bottom: 10px;
+    padding-right: 168px;
+    padding-left: 42px;
+  }
+}
+
+i.trigger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  line-height: 40px;
+  cursor: pointer;
+  transition: all .3s;
+  padding: 0 12px;
+  &:hover {
+    background: @primary-1;
+  }
+}
+
+.mainContent {
+  position: fixed;
+  :global {
+    .ant-tabs-extra-content {
+      line-height: 32px;
+    }
+    .ant-tabs-bar {
+      margin: 0 0 0 0 !important;
+    }
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+      margin-right: 0 !important;
+      line-height: 32px;
+    }
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab.ant-tabs-tab-active {
+      border-top: 3px solid #1890ff;
+    }
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-nav-container {
+      height: 36px;
+    }
+  }
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 40px;
+  height: 40px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  .action {
+    cursor: pointer;
+    padding: 0 8px;
+    display: inline-block;
+    transition: all .3s;
+    height: 100%;
+    i {
+      font-size: 16px; // vertical-align: middle;
+    }
+    &:global(.ant-popover-open), &:hover {
+      background: @primary-1;
+    }
+  }
+  .search {
+    padding: 0;
+    margin: 0 12px;
+    &:hover {
+      background: transparent;
+    }
+  }
+  .account {
+    .avatar {
+      // color: @primary-color;
+      background: #2db7f5;
+      vertical-align: middle;
+    }
+  }
+}
+
+.menu {
+  :global(.anticon) {
+    margin-right: 10px;
+  }
+  :global(.ant-dropdown-menu-item) {
+    width: 160px;
+  }
+}

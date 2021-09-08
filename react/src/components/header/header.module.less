@@ -1,0 +1,142 @@
+@import "~antd/lib/style/themes/default.less";
+.header {
+    padding: 0 8px 0 0;
+    background: #FFF;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, .08);
+    position: relative;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+}
+
+.fixedHeader {
+    position: fixed;
+    width: calc(100% - 256px);
+    height: 46px;
+    line-height: 46px;
+    z-index: 10;
+    padding: 0 8px 0 0;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, .1);
+    background: #fff;
+    :global {
+        .ant-tabs-nav {
+            .ant-tabs-tab {
+                color: #fff;
+                &:hover {
+                    color: #dae4f3;
+                }
+            }
+            .ant-tabs-tab-active {
+                color: #fff;
+                box-shadow: inset 4px 8px 16px 12px rgba(4, 22, 249, .25);
+            }
+        }
+    }
+}
+
+.fixedCollapsedHeader {
+    position: fixed;
+    width: calc(100% - 80px);
+    height: 46px;
+    line-height: 46px;
+    z-index: 10;
+    padding: 0 8px 0 0;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, .1);
+    background: #fff;
+    :global {
+        .ant-tabs-nav {
+            .ant-tabs-tab {
+                color: #fff;
+                &:hover {
+                    color: #dae4f3;
+                }
+            }
+            .ant-tabs-tab-active {
+                color: #fff;
+                box-shadow: inset 4px 8px 16px 12px rgba(4, 22, 249, .25);
+            }
+        }
+    }
+}
+
+:global {
+    .ant-layout {
+        overflow-x: hidden;
+    }
+}
+
+.menu {
+    :global(.anticon) {
+        margin-right: 10px;
+    }
+    :global(.ant-dropdown-menu-item) {
+        // width: 160px;
+    }
+}
+
+i.trigger {
+    float: left;
+    font-size: 20px;
+    line-height: 46px;
+    cursor: pointer;
+    transition: all .3s;
+    padding: 0 16px 0 16px;
+    color: #000;
+    &:hover {
+        background: @primary-1;
+        color: #000;
+    }
+}
+
+@media screen and (max-width: @screen-xs) {
+    .trigger {
+        display: none;
+    }
+}
+
+.right {
+    float: right;
+    position: absolute;
+    left: 90%;
+    right: 8px;
+    height: 100%;
+    .action {
+        cursor: pointer;
+        padding: 0 8px;
+        display: inline-block;
+        transition: all .3s;
+        width: 100%;
+        height: 100%;
+        color: #000;
+        i {
+            font-size: 16px;
+            // vertical-align: middle;
+        }
+        &:global(.ant-popover-open), &:hover {
+            background: @primary-1;
+            color: #000;
+        }
+    }
+    .search {
+        padding: 0;
+        margin: 0 12px;
+        &:hover {
+            background: transparent;
+        }
+    }
+    .account {
+        .avatar {
+            // color: @primary-color;
+            font-size: 20px;
+            background: @primary-color;
+            // background: #fde3cf;
+            color: #FFFFFF;
+            vertical-align: middle;
+            :global {
+                .anticon-user {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

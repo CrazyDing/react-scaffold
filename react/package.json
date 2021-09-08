@@ -1,0 +1,61 @@
+{
+    "name": "fast-react-init",
+    "author": "****(****@****.com)",
+    "version": "3.0.0",
+    "license": "MIT",
+    "description": "前端脚手架(基于React V16.8 && React Router V4)",
+    "private": true,
+    "scripts": {
+        "start": "react-app-rewired --max_old_space_size=8192 start",
+        "build": "react-app-rewired --max_old_space_size=8192 build",
+        "test": "react-app-rewired test",
+        "eject": "react-app-rewired eject"
+    },
+    "homepage": "/mysys",
+    "homepageDes": "homepage字段的值为src/constants/index.js中SYS_ID",
+    "proxy": "",
+    "dependencies": {
+        "@babel/polyfill": "^7.2.5",
+        "antd": "^3.25.3",
+        "axios": "^0.19.0",
+        "classnames": "^2.2.5",
+        "date-fns": "^2.8.0",
+        "echarts": "^4.1.0",
+        "echarts-for-react": "^2.0.14",
+        "history": "^4.7.2",
+        "js-cookie": "^2.2.0",
+        "prop-types": "^15.6.2",
+        "react": "^16.8.4",
+        "react-document-title": "^2.0.3",
+        "react-dom": "^16.8.4",
+        "react-loadable": "^5.5.0",
+        "react-redux": "^5.0.7",
+        "react-router": "^4.2.0",
+        "react-router-dom": "^4.3.1",
+        "react-router-redux": "^4.0.8",
+        "redux": "^4.0.0",
+        "redux-logger": "^3.0.6",
+        "redux-thunk": "^2.3.0",
+        "uuid": "^3.3.2"
+    },
+    "devDependencies": {
+        "babel-plugin-dynamic-import-node": "^2.3.0",
+        "babel-plugin-import": "^1.11.0",
+        "customize-cra": "^0.2.12",
+        "happypack": "^5.0.1",
+        "less": "^3.9.0",
+        "less-loader": "^4.1.0",
+        "react-app-rewired": "^2.1.1",
+        "react-scripts": "2.1.8",
+        "webpack-filter-warnings-plugin": "^1.2.1"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+    ]
+}

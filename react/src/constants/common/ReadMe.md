@@ -1,0 +1,1 @@
+存放通用功能的actionTypes的定义
